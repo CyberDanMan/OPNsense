@@ -15,13 +15,17 @@ Step 3. Moving the downloaded installer image to your USB drive. Now that we hav
 Rufus - Create bootable USB drives the easy way - https://rufus.ie/en/
 
 
-Step 5. Booting to the USB drive. Depending on what computer you have decided to use, the following steps could be different.  The main idea here is you need to boot to the USB drive you just formatted with RUFUS.  For my mini pc, the ESC button did the trick to enter into the boot menu where  I selected the drive and the OPNsense environment began to load.
+Step 4. Booting to the USB drive. Depending on what computer you have decided to use, the following steps could be different.  The main idea here is you need to boot to the USB drive you just formatted with RUFUS.  For my mini pc, the ESC button did the trick to enter into the boot menu where  I selected the drive and the OPNsense environment began to load.
 NOTE:  Having a Cat6 or equivalent cable connected to the hardware is desired, if you can connect a WAN cable to your modem or internet facing hardware it is also helpful. I had both a cable connected directly to my laptop and a cable connected to my Cable Modem.
 
-Step 6.  The Install.  A menu will load with seven options right away, disregard this for the installation we are completing. The process will automatically continue.
+Step 5.  The Install.  A menu will load with seven options right away, disregard this for the installation we are completing. The process will automatically continue.
+![image](https://github.com/CyberDanMan/OPNsense/assets/164780036/655946bf-b276-43a2-8880-c639d1abb878)
+
  
 If you are watching the text while the files are loading, there will be a brief prompt that says “Press any key to start the configuration importer, this process can be ignored  as it not useful for our purposes. This process is for restoring backups or if you have a baseline installation file to install.
- 
+
+ ![image](https://github.com/CyberDanMan/OPNsense/assets/164780036/1b2dcd4c-0afb-45f4-bd76-da24708637dc)
+
 OPNsense will auto assign Wan and Lan ports during the initial setup, we can always edit these interfaces later. For now, ensuring you have connected a single ethernet cable  to one of the network cards and getting an IP from the OPNsense live environment is desired.
 Next, will be the login area.  Here you will want to use the following credentials.
 installer / opnsense
@@ -37,16 +41,19 @@ Once the system is back up, you will need to login using “root” and the new 
 OPNsense will then provide you with a menu. We will choose 1 to “Assign Interfaces”
 
 The next step will ask if you want to setup LAGG interfaces (link Aggregation) I chose to bypass this step.
- 
 
-Next up is VLAN configuration, I chose to bypass this as well for the time being. I will be configuring them later, but in the GUI. I do have an OMADA switch and EAP that are capable of VLAN tagging, but that process will defined in a later walk through.
+![image](https://github.com/CyberDanMan/OPNsense/assets/164780036/3b3fe9ac-4a0d-46d0-9cc2-a4349fadbd64)
+
+ 
+OPNsense install will continue and ask about  VLAN configuration, I chose to bypass this as well for the time being. I will be configuring them later, but in the GUI. I do have an OMADA switch and EAP that are capable of VLAN tagging, but that process will defined in a later walk through.
  
 OPNsense will then ask you to  define the WAN and LAN interfaces for your device, or you can choose to have OPNsense auto assign these. Since my mini pc had each network port listed with its information, I was able to assign the left port to WAN and the right port to LAN in standard fashion. Allowing OPNsense to auto assign interfaces here is fine, you can always update them later if needed.
 After setting up the interfaces, I chose option six in the ensuing menu to reboot the system. This is optional, but I wanted to have a clean boot of the system before trying to log into the GUI.
 
-Step 8- Web GUI. Now that the OPNsense install is completed, you can access the web based gui by using the default IP address of 192.168.1.1 ( make sure you are connected via ethernet cable to the firewall device).  After bypassing the warning screen in your browser, you will get to the login menu. Using root for username and whatever password you configured will allow you to login to the OPNsense firewall to begin configuration!  Have fun and I hope this guide helps.
+Step 6- Web GUI. Now that the OPNsense install is completed, you can access the web based gui by using the default IP address of 192.168.1.1 ( make sure you are connected via ethernet cable to the firewall device).  After bypassing the warning screen in your browser, you will get to the login menu. Using root for username and whatever password you configured will allow you to login to the OPNsense firewall to begin configuration!  Have fun and I hope this guide helps.
  
 
+![image](https://github.com/CyberDanMan/OPNsense/assets/164780036/c493d61a-e4f0-465c-b4c0-6fa5522404dd)
 
 
 
