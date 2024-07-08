@@ -1,5 +1,4 @@
-# OPNsense
-Setting up your home lab Firewall with OPNsense. 
+# OPNsense Setup Guide
 Goal: To configure a versatile firewall device to enhance understanding of key cybersecurity fundamentals. Including. ACL / Rules / Dns Filtering / IPS/IDS / Log review
 
 Step 1.  Decide what environment you wish to deploy your OPNsense installation in. For me, I had funds saved to build a home lab and chose a mini PC available on Amazon. Those on a strict budget might choose to forego this expense by using a virtual machine, but I wanted a Bare Metal configuration.
