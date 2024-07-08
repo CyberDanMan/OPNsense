@@ -6,6 +6,8 @@ Step 1.  Decide what environment you wish to deploy your OPNsense installation i
 When choosing my hardware, I took into consideration what the Firewall would be used for long term. My goal was to configure IDS/IPS , VLAN capabilities and VPN along with general DHCP, DNS etc.
 Based on these features, I chose a mini pc with an Intel N100 processor, two 1gb network cards (1 for WAN and one for LAN) 16gb of RAM, to ensure rich system resources for IDS/IPS which are known resource hogs, and a 512gb solid state hard drive in case someday I decided to repurpose the mini pc.
 All that for 170 dollars with free shipping.  Sure, I could have purchased a Netgate box that came preinstalled with PFsense, but where is the fun in that?
+![image](https://github.com/CyberDanMan/OPNsense/assets/164780036/764db27d-f5b8-4ff7-828a-43ea6075e4b8)
+
 
 Step 2. Choosing the correct file format and version to download.  Since I am using physical resources, I chose the AMD64 VGA format. If you choose to use a USB drive to install your OPNsense, this is the way to go. 
 Step 3. Moving the downloaded installer image to your USB drive. Now that we have the package to install, we need to format our USB drive to be bootable. I used a free program called RUFUS. It is free and super easy to use and if you do get tripped up, there is a lot of easy to find documentation online. After RUFUS completes formatting the drive, simply move the file onto the USB drive.
